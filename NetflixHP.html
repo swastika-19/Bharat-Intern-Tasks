@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Netflix</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+                }
+
+            body {
+                background-color: #000000;
+                }
+
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding-top: 20px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+                padding-right: 40px;
+                background: #000000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 100;
+                }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin-left: 40px;
+                }
+
+            .navbar a:hover {
+                color: gray;
+                background-color: transparent;
+                text-decoration: underline;
+                }
+
+            h3 {
+                color: white;
+                font-size: 25px;
+                margin-top: 40px;
+                margin-left: 30px;;
+                }
+
+            .shows .shows-wrapper {
+                overflow-x: scroll;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                padding-right: 3em;
+                width: 100vw;
+                }
+
+            .shows .shows-wrapper .show {
+                padding: 1em;
+                }
+
+            .shows .shows-wrapper .show:last-child {
+                margin-right: 3em;
+                }
+
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                }
+
+            .overlay-text {
+                position: relative;
+                margin: 10px;
+                }
+
+            .text-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.3s ease;
+                background-color: rgba(255, 0, 0, 0.641);
+                color: white;
+                padding: 10px;
+                }
+
+            .overlay-text:hover .text-overlay {
+                visibility: visible;
+                opacity: 1;
+                }
+
+            .image img {
+                width: 100%;
+                height: 20%;
+                }
+
+            .show {
+                padding: 25px;
+                height: 210px;
+                width: 170px;
+                }
+
+            .show:hover {
+                transform: scale(1.1);
+                }
+
+        </style>
+    </head>
+    
+    <body>
+        <header class="header">
+            <a href="#" class="logo"><img src="https://brandslogos.com/wp-content/uploads/images/netflix-logo.png" alt="Netflix Logo" style="width:135px;height:30px;"></a>
+            <nav class="navbar">
+                <input type="text" placeholder="  Search" style="width:450px;height:30px;">
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+            </nav>
+        </header>
+        <img src="https://staticg.sportskeeda.com/editor/2022/09/96486-16643393427992.png" alt="Stranger Things 4" style="margin-top: 69px; width: 1349px; height: 600px;">
+        
+        <h3>Trending Shows</h3>
+        <div class="shows-wrapper">
+            <div class="image-container">
+                <div class="overlay-text">
+                    <img src="https://tv-fanatic-res.cloudinary.com/iu/s--cY2ey55O--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1629330477/never-have-i-ever-poster.jpg" class="show">
+                    <p style="color: white; margin-left: 20px;">Never Have I Ever</p>
+                    <span class="text-overlay">▶ Watch</span>
+                </div>
+                <div class="overlay-text">
+                    <img src="https://resizing.flixster.com/kxbsYTVNakg9JQ6VLiuAs-SikY8=/206x305/v2/https://resizing.flixster.com/ra1n0-jmQobKgbNivqoY2PLdhnc=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vYTFiNjhhNzItODQ5Zi00MzdjLTliZTQtODI2OTVjZTYyYTRiLmpwZw==" class="show">
+                    <p style="color: white; margin-left: 55px;">XO, Kitty</p>
+                    <span class="text-overlay">▶ Watch</span>
+                </div>
+                <div class="overlay-text">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/046/103/336/large/illusion-design-money-heist-poster-min.jpg?1644314844" class="show">
+                    <p style="color: white; margin-left: 40px;">Money Heist</p>
+                    <span class="text-overlay">▶ Watch</span>
+                </div>
+                <div class="overlay-text">
+                    <img src="https://www.thesun.co.uk/wp-content/uploads/2023/06/cast-taken-without-permission-https-747358999-1.jpg?w=620" class="show">
+                    <p style="color: white; margin-left: 43px;">Black Mirror</p>
+                    <span class="text-overlay">▶ Watch</span>
+                </div>
+                <div class="overlay-text">
+                    <img src="https://media.newstrack.in/uploads/entertainment/hollywood-news/May/16/big_thumb/gjig_64635c855dfe7.jpg" class="show">
+                    <p style="color: white; margin-left: 45px;">Extraction 2</p>
+                    <span class="text-overlay">▶ Watch</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>New Releases</h3>
+    <div class="shows-wrapper">
+        <div class="image-container">
+            <div class="overlay-text">
+                <img src="https://static.wikia.nocookie.net/netflix/images/9/97/THE_DAYS_S1_Poster.jpg/revision/latest/scale-to-width-down/350?cb=20230605235142" class="show">
+                <p style="color: white; margin-left: 46px;">The Days</p>
+                <span class="text-overlay">▶ Watch</span>
+            </div>
+            <div class="overlay-text">
+                <img src="https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABbuVcBIzfegEH4M9CFWKNxyB8kRYoc--JtiRJpA7kYVTfhm1ZcQHbv1Ve8mgY5juaZipeqP6TTPhNR3KrB122q6Vcn6ekVSC7D0Qp8JasL7m_--rf9d-4OTbSkn-tiGPN3wfew.jpg" class="show">
+                <p style="color: white; margin-left: 32px;">A Beautiful Life</p>
+                <span class="text-overlay">▶ Watch</span>
+            </div>
+            <div class="overlay-text">
+                <img src="https://storage.googleapis.com/mb-mkt-neo-prod-1-uploads/ENUS_Missed_Connection_Main_Vertical_RGB_POST_72f083f6dd/ENUS_Missed_Connection_Main_Vertical_RGB_POST_72f083f6dd.jpg" class="show">
+                <p style="color: white; margin-left: 13px;">Missed Connections</p>
+                <span class="text-overlay">▶ Watch</span>
+            </div>
+            <div class="overlay-text">
+                <img src="https://static.wikia.nocookie.net/netflix/images/a/af/Rich_in_Love.jpg/revision/latest?cb=20200610154402" class="show">
+                <p style="color: white; margin-left: 43px;">Rich in Love</p>
+                <span class="text-overlay">▶ Watch</span>
+            </div>
+            <div class="overlay-text">
+                <img src="https://dnm.nflximg.net/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABRR3S_JQRd4xCMPgsSWAO7J4TKr48dqA1m9TDnHbZILtVwE5Um8uGQy93E6Su81cWzdiWx3mF0MKvZCPtvxQUhLvvwDoEKKuG4Uyi6qt5vS0qLzDn4Uej_lxzlvotz1SBjZZkw.jpg?r=817" class="show">
+                <p style="color: white; margin-left: 18px;">Barracuda Queens</p>
+                <span class="text-overlay">▶ Watch</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Sci-fi and Fantasy</h3>
+<div class="shows-wrapper">
+    <div class="image-container">
+        <div class="overlay-text">
+            <img src="https://static1.showtimes.com/poster/660x980/lucifer-netflix-147018.jpg" class="show">
+            <p style="color: white; margin-left: 60px;">Lucifer</p>
+            <span class="text-overlay">▶ Watch</span>
+        </div>
+        <div class="overlay-text">
+            <img src="https://posterspy.com/wp-content/uploads/2023/01/Wednesday-2.jpg" class="show">
+            <p style="color: white; margin-left: 45px;">Wednesday</p>
+            <span class="text-overlay">▶ Watch</span>
+        </div>
+        <div class="overlay-text">
+            <img src="https://dnm.nflximg.net/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABaMJeCxzfSwQwHQmGdstQElzBH9jjs9A3HqPUn5n2rONWpyqDeLDENByVraArHxvogTHY_Y0RsPT7FrDwHo58izk5A8Z7ujtLUsF4S8NQZ7YRPKflfo7fGsVs-_pev6Yl-p4MQ.jpg?r=17d" class="show">
+            <p style="color: white; margin-left: 41px;">Sweet Tooth</p>
+            <span class="text-overlay">▶ Watch</span>
+        </div>
+        <div class="overlay-text">
+            <img src="http://www.impawards.com/tv/posters/manifest.jpg" class="show">
+            <p style="color: white; margin-left: 55px;">Manifest</p>
+            <span class="text-overlay">▶ Watch</span>
+        </div>
+        <div class="overlay-text">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzVkOTIxZWUtMTNjOC00NWMwLWEyNDQtNTY2NzYxNjhhYTA1XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg" class="show">
+            <p style="color: white; margin-left: 41px;">Locke & Key</p>
+            <span class="text-overlay">▶ Watch</span>
+        </div>
+    </div>
+</div>
+</div>
+
+    </body>
+</html>
